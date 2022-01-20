@@ -12,13 +12,14 @@ public class QualifierDatabaseManager implements Serializable {
 	
 	private static final long serialVersionUID = -5941947253904028432L;
 	
-	// for default
-	@Inject
-	private IDatabase iDatabase;
-	
+	// for default db
 	// @Inject
-	// @QualifierMultipleSelection
 	// private IDatabase iDatabase;
+	
+	// for optional db
+	@Inject
+	@QualifierMultipleSelection
+	private IDatabase iDatabase;
 	
 	public String getiDatabase() {
 		return iDatabase.selectDatabase("Database : ");
