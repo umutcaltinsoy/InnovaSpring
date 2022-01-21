@@ -6,7 +6,11 @@
  <alternatives>
   <class>com.innova.db.alternative.Postgresql</class>
  </alternatives>
+ 
+ <!-- interceptor bean -->
  <interceptors>
-  <class>com.innova.interceptor.YolKesiciMethod</class>
+  <class>com.innova.interceptor.DbInterceptorMethod</class>
  </interceptors>
+ 
+ 
 </beans>
